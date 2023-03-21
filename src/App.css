@@ -1,0 +1,80 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 95vh;
+  /* flex-wrap: wrap; */
+}
+
+.pallete {
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+  width: 95%;
+  height: 50vh;
+  border: 1px solid orange;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+  align-items: center;
+  cursor: copy;
+}
+input[type="text"] {
+  text-align: center;
+  width: 50%;
+  padding: 5px;
+  font-weight: bold;
+  background-color: burlywood;
+  border: none;
+}
+
+button {
+  margin-top: 15px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.buttons > button {
+  color: white;
+  padding: 5px;
+  background: linear-gradient(
+    to right,
+    blue,
+    green,
+    rebeccapurple,
+    black,
+    purple,
+    pink
+  );
+  border: none;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 100ms linear;
+}
+.buttons > button:hover {
+  transform: scale(0.9);
+}
+.floating {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 15px;
+  text-shadow: 2px 1px 15px white;
+  padding: 5px;
+}
+.colorCards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.color-card {
+  width: 100px;
+  height: 100px;
+}
