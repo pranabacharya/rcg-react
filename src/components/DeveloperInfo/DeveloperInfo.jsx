@@ -1,7 +1,11 @@
 import React from "react";
 
 const DeveloperInfo = () => {
-  return <div>{new Date().getFullYear()} &copy; Pranab Acharya</div>;
+  return (
+    <div>
+      <b>{new Date().getFullYear()}</b> &copy; Pranab Acharya
+    </div>
+  );
 };
 
 export default DeveloperInfo;
